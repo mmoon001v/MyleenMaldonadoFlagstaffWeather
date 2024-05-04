@@ -1,0 +1,29 @@
+---
+title: "FlagstaffWeather_Plots"
+author: "Myleen Maldonado"
+date: "`r Sys.Date()`"
+output: pdf_document
+
+---
+
+```{r}
+library(MyleenMaldonadoFlagWeather)
+
+ggplot(Flagstaff_Weather, aes(x=DATE, y=PRCP)) +
+  geom_point()
+
+ggplot(Flagstaff_Weather, aes(x=DATE, y=SNOW)) +
+  geom_point()
+
+ggplot(Flagstaff_Weather, aes(x=DATE, y=TMAX)) +
+  geom_point()
+
+ggplot(Flagstaff_Weather, aes(x=DATE, y=TMIN)) +
+  geom_point()
+
+```
+
+
+
+
+
